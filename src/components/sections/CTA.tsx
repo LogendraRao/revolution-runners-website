@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
@@ -20,8 +21,19 @@ export const CTA: React.FC<CTAProps> = ({ variant = 'default' }) => {
   return (
     <section
       ref={ref}
-      className="py-20 sm:py-28 bg-gradient-to-br from-brand-navy via-brand-navy-dark to-brand-navy relative overflow-hidden"
+      className="py-20 sm:py-28 relative overflow-hidden"
     >
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=2070&q=80"
+          alt="Business success"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-navy/80 via-brand-navy-dark/75 to-brand-navy/80" />
+      </div>
+
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{

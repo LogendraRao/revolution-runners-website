@@ -96,7 +96,7 @@ export default function CareersPage() {
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-brand-navy/95 to-brand-navy-dark/90" />
+            <div className="absolute inset-0 bg-gradient-to-br from-brand-navy/80 to-brand-navy-dark/75" />
           </div>
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <motion.div

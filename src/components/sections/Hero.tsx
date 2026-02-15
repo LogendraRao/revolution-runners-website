@@ -19,7 +19,7 @@ export const Hero: React.FC = () => {
           priority
         />
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-navy/95 via-brand-navy-dark/90 to-brand-navy/95" />
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-navy/80 via-brand-navy-dark/75 to-brand-navy/80" />
       </div>
 
       {/* Background Pattern */}
